@@ -1,0 +1,153 @@
+body {
+  font-family: - 'Ubuntu';
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ 
+.app{
+  height: 100vh;
+  width: 100%;
+  background: url('/src/static/images/aurora_borealis_atmosphere.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+form{
+  width: 35%;
+  height: 5%;
+  border: none;
+  text-align: center;
+  margin-top: 5%;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.cityInput{
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+
+.submit{
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  outline: none;
+  background: rgb(116, 116, 196);
+  margin-left: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.container-main{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sun{
+ height:200px;
+ width:200px;
+}
+
+.imgHolder{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataHolder{
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+ 
+.weatherTypePic{
+  height: 70px;
+  width: 70px;
+}
+ 
+
+.sevenDaysContainer{
+  margin-top: 5%;
+  width: 90%;
+  height: 200px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+}
+
+.innerSeven{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+ 
+
+@media only screen and (max-width: 600px) {
+  form{
+    width: 70%;
+  }
+  
+  .container-main{
+    display: flex;
+    width: 80%;
+  }
+
+  .sun{
+    height: 80px;
+    width: 80px;
+  }
+
+  .sevenDaysContainer{
+    margin-top: 5%;
+    width: 100%;
+    height: 200px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .innerSeven{
+    padding: 20px;
+  }
+  .app{
+    height: 170vh;
+  }
+
+
+}
